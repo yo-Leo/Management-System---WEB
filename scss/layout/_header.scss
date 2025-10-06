@@ -1,12 +1,35 @@
 header {
-  background-color: $primary-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: $primary-color;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  font-family: $font-family;
+  padding: 10px 30px; 
+}
 
-  img {
-    height: 40px;
+#logoimage {
+    height: 60px;
+    cursor: pointer;
+    transform: scale(2.0);
+    transform-origin: center; 
+  }
+
+#logoimage {
+    height: 60px;
+    cursor: pointer;
+    transform: scale(2.0);
+    transform-origin: center; 
+  }
+
+  #profileimage {
+    height: 60px;
     cursor: pointer;
   }
-}

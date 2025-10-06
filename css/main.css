@@ -1,12 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 header {
-  background-color: rgb(55, 96, 231);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgb(55, 96, 231);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: "Orbitron", sans-serif;
+  padding: 10px 30px;
 }
-header img {
-  height: 40px;
+
+#logoimage {
+  height: 60px;
   cursor: pointer;
+  transform: scale(2);
+  transform-origin: center;
+}
+
+#logoimage {
+  height: 60px;
+  cursor: pointer;
+  transform: scale(2);
+  transform-origin: center;
+}
+
+#profileimage {
+  height: 60px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 220px;
+  height: calc(100vh - 60px);
+  background: rgb(55, 96, 231);
+  color: white;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding-top: 60px;
+  font-family: "Orbitron", sans-serif;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.sidebar ul li a:hover {
+  background: rgb(55, 96, 231);
+  padding-left: 25px;
 }/*# sourceMappingURL=main.css.map */

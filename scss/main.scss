@@ -1,9 +1,11 @@
 
+// Utils
+@import 'utils/variables';
+
 // Base
 @import 'base/reset';
 
 // Layout
 @import 'layout/header';
+@import 'layout/sidebar';
 
-// Utils
-@import 'utils/variables';
