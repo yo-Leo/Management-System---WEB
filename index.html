@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LegalMind - Pagina Inicial</title>
     <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,17 @@
             <img id = "logoimage" src="images/logo.png" alt="Logo do site Manager">
         </a>
 
-        <a href="#">
+        <a href="#" id="profile-container">
             <img id="profileimage" src="images/profile.png"
                 alt="Foto de perfil do usuario, caso não esteja logado. aparece a imagem padrão">
         </a>
+
+        <div id="profile-menu" class="hidden">
+
+            <button id="addUserBtn">➕ Adicionar Usuário</button>
+            <button id="logoutBtn">🚪 Sair</button>
+
+        </div>
 
     </header>
 
