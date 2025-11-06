@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalMind - Adicionar Usuario</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="module" src="../../js/main.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <a href="../../index.html">
+            <img id="logoimage" src="../../images/logo.png" alt="Logo do site Manager">
+        </a>
+
+        <a href="#" id="profile-container">
+            <img id="profileimage" src="../../images/profile.png"
+                alt="Foto de perfil do usuario, caso não esteja logado. aparece a imagem padrão">
+        </a>
+
+        <div id="profile-menu" class="hidden">
+
+            <button id="addUserBtn">➕ Adicionar Usuário</button>
+            <button id="logoutBtn">🚪 Sair</button>
+
+        </div>
+
+    </header>
+
+    <div class="main-content">
+
+        <form id="addUserForm" enctype="multipart/form-data">
+            <h1>Adicionar Novo Usuário</h1>
+
+            <label for="username">Nome:</label>
+            <input type="text" id="username" name="username" placeholder="Digite o nome completo" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Crie uma senha segura" required>
+
+            <label for="photo">Foto do Usuário:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+
+            <button type="submit" id="btnSubmitUser">Adicionar Usuário</button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
